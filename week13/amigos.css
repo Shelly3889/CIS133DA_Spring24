@@ -1,0 +1,58 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+body {
+    background-color: yellow;
+}
+
+form {
+    width: 300px;
+    margin: auto;
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ticket {
+    display: flex;
+    padding: 50px;
+    width: 600px;
+    margin: auto;
+}
+
+ownerInfo {
+    width: 250px;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+amigoInfo {
+    text-align: center;
+    width: 350px;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+}
+
+.boldText {
+    font-weight: 700;
+}
+
+#aa_logo {
+    background-color: white;
+    margin: auto;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+#size_td {
+    display: flex;
+    justify-content: space-around;
+}
+
+

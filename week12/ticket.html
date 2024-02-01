@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="amigos.css">
+    <title>Your Ticket to Animal Amigos</title>
+</head>
+
+<body>
+
+    <div id="aa_logo">
+        <img src="./images/animal_amigos_shelter.PNG" style="width:300px;" alt="Animals in Sombreros" />
+    </div>
+
+    <form id="form">
+        <table>
+            <tr>
+                <td>Amigo's Name</td>
+                <td><input type="text" name="amigo_name" id="amigo_name" required style="width:150px;" /></td>
+            </tr>
+            <tr>
+                <td>Amigo Type</td>
+                <td>
+                    <select name="amigo_type" id="amigo_type" style="width:100%">
+                        <option>Select One</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="bird">Bird</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Amigo Size</td>
+                <td id="size_td">
+                    <input type="radio" name="amigo_size" id="small" value="small" checked>&nbsp;S
+                    <input type="radio" name="amigo_size" id="medium" value="medium">&nbsp;M
+                    <input type="radio" name="amigo_size" id="large" value="large">&nbsp;L
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:right;"">
+                    <input type="button" value="Cancel" onclick="cancelTicket()" />
+                    <input type="button" value="Print Ticket" onclick="printTicket()" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <ticket>
+        <ownerInfo>
+            <p>Sr. Amigo's Name</p>
+            <p><span class="boldText" id="ownerName">???</span></p>
+            <p>Date of Visit</p>
+            <p><span class="boldText" id="visitDate">??/??/????</span></p>
+        </ownerInfo>
+
+        <amigoInfo>
+            <p>My New Jr. Amigo</p>
+            <img id="amigoPicture" src="./images/placeholder.png" style="height:150px;" />
+            <p><span class="boldText" id="amigoName">???</span></p>
+        </amigoInfo>
+    </ticket>
+</body>
+</html>

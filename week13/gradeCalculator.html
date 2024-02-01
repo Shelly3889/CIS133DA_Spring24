@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CIS133 Grades</title>
+    <style>
+        table { 
+            margin-left:auto;
+            margin-right:auto;
+            border-spacing: 0px;
+            margin-top: 50px;
+        }
+
+        thead, tfoot {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            background-color: darkgreen;
+        }
+        
+        th, td {
+            padding: 10px;
+        }
+
+        tbody {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .nbr {
+            text-align: right;
+        }
+
+        .sum {
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        tbody > tr:nth-of-type(even) {
+	        background-color: lightgreen;
+        }
+
+        input[type=number] {
+            width: 50px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">My CIS133 Grades</th>
+            </tr>
+            <tr>
+                <th>Week #</th>
+                <th>Pts Possible</th>
+                <th>Pts Actual</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Week 1</td>
+                <td class="nbr"><input type="number" id="pos1" value="70" /></td>
+                <td class="nbr"><input type="number" id="act1" value="65" /></td>
+            </tr>
+            <tr>
+                <td>Week 2</td>
+                <td class="nbr"><input type="number" id="pos2" value="80" /></td>
+                <td class="nbr"><input type="number" id="act2" value="68" /></td>
+            </tr>
+            <tr>
+                <td>Week 3</td>
+                <td class="nbr"><input type="number" id="pos3" value="40" /></td>
+                <td class="nbr"><input type="number" id="act3" value="34" /></td>
+            </tr>
+            <tr>
+                <td>Week 4</td>
+                <td class="nbr"><input type="number" id="pos4" value="40" /></td>
+                <td class="nbr"><input type="number" id="act4" value="36" /></td>
+            </tr>
+            <tr>
+                <td>Week 5</td>
+                <td class="nbr"><input type="number" id="pos5" value="40" /></td>
+                <td class="nbr"><input type="number" id="act5" value="31" /></td>
+            </tr>
+            <tr>
+                <td>Week 6</td>
+                <td class="nbr"><input type="number" id="pos6" value="40" /></td>
+                <td class="nbr"><input type="number" id="act6" value="29" /></td>
+            </tr>
+            <tr>
+                <td>Week 7</td>
+                <td class="nbr"><input type="number" id="pos7" value="40" /></td>
+                <td class="nbr"><input type="number" id="act7" value="37" /></td>
+            </tr>
+            <tr>
+                <td>Week 8</td>
+                <td class="nbr"><input type="number" id="pos8" value="100" /></td>
+                <td class="nbr"><input type="number" id="act8" value="91" /></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th class="sum" id="posTot"></th>
+                <th class="sum" id="actTot"></th>
+            </tr>
+            <tr>
+                <th id="myGrade" colspan="3"></th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

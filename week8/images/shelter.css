@@ -1,0 +1,63 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+header, aside, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    color: white;
+    background-color: blue;
+}
+
+aside {
+    background-color: yellow;
+}
+
+aside > img {
+    border-radius: 50%;
+}
+
+main {
+}
+
+footer {
+    color: white;
+    background-color: blue;
+}
+
+header, footer {
+}
+
+h1 {
+    color: rgb(33,87,51);
+}
+
+p {
+    color: blue;
+}
+
+.mascot {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.amigo_div {
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+}
+
+.amigo_div > img {
+    width: 180px;
+    height: 180px;
+}
