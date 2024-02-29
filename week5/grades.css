@@ -1,0 +1,27 @@
+
+body {
+    font-size: 10px;
+
+}
+
+table, td, th {
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    padding: 1rem;    
+
+}
+
+th {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.tdRight {
+    text-align: right;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: lightblue;
+
+}
