@@ -242,3 +242,52 @@ body {
     }
 }
 
+.card {
+    display: inline-table ;
+    justify-content: space-evenly;
+    grid-template-columns: 300px;
+    grid-template-rows: 330px 300px 40px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 7px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    border:3px solid #1abc91;
+}
+
+/*height card*/
+.card-text        
+{
+    grid-area: text;
+    margin: 25px;
+}
+
+/*  pilot*/
+.card-text p {
+    color: rgb(16, 207, 144);
+    font-family: "Poppins", sans-serif;
+    font-size:17px;
+    font-weight: 300;
+    border:"3px solid #73AD21";
+    text-align: center
+}
+
+.card-text h2 {
+    margin-top:20px;
+    font-size:23px;
+}
+
+/* lenght of card*/
+.card {
+    margin-left: 350px;
+    margin-top:50px;
+    right: -30%;
+    width: 60%;
+    height: flex;
+}
+
+.table {
+    margin-left: 350px;
+    margin-top:100px;
+    right: -30%;
+}
+
