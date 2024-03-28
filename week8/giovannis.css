@@ -2,28 +2,47 @@ body {
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 15vw auto;
+    grid-template-rows: 15vh auto 10vh;
+    grid-template-areas: "hdr hdr" "asd mn" "ftr ftr";
 }
 
 header, aside, main, footer {
     padding: 20px;
     text-align: center;
+
 }
 
 header {
     color: white;
     background-color: rgb(33,87,51);
+    grid-area: hdr;
+}
+
+header, 
+footer {
+    display: flex;
+    flex: wrap;
+    gap: 15rem;
+    justify-content: center;
+    align-items: center;
 }
 
 aside {
     background-color: rgb(75,133,94);
+    grid-area: asd;
 }
 
 main {
+    grid-area: mn;
 }
 
 footer {
     color: white;
     background-color: rgb(53,112,72);
+    grid-area: ftr;
+    
 }
 
 h1 {
