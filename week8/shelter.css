@@ -7,6 +7,11 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 15vw auto;
+    grid-template-rows: 15vh auto 10vh;
+    grid-template-areas: "hdr hdr" "asd mn" "ftr ftr";
+
 }
 
 header, aside, main, footer {
@@ -17,10 +22,22 @@ header, aside, main, footer {
 header {
     color: white;
     background-color: blue;
+    grid-area: hdr;
 }
+
+header, 
+footer,
+#wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    align-items: center;
+}
+
 
 aside {
     background-color: yellow;
+    grid-area: asd;
 }
 
 aside > img {
@@ -28,14 +45,15 @@ aside > img {
 }
 
 main {
+    grid-area: mn;
+
 }
 
 footer {
     color: white;
     background-color: blue;
-}
-
-header, footer {
+    grid-area: ftr;
+    justify-content: center;
 }
 
 h1 {
@@ -61,3 +79,4 @@ p {
     width: 180px;
     height: 180px;
 }
+
