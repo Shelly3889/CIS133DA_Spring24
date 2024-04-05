@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands On 9</title>
+    <style>
+        form {
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        input[type=reset],
+        input[type=submit] {
+            width: 90px;
+            }
+        
+        input[type=text] {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table>
+        <tr>
+            <td colspan="2">
+                <input 
+                    type="text" 
+                    name="Username"
+                    id="username"
+                    class="input"
+                    autofocus
+                    maxlength="24"
+                    required
+                    tabindex="1"
+                    placeholder="Type Your Username"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input
+                type="text" 
+                name="Password"
+                id="password"
+                class="input"
+                autofocus
+                autofocus
+                maxlength="24"
+                required
+                tabindex="2"
+                placeholder="Type Your Password"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <input
+                type="reset"
+                tabindex="4"
+                />
+            </td>
+            <td colspan="1">
+                <input
+                type="submit"
+                tabindex="3"
+                />
+            </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
