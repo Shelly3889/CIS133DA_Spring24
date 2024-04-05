@@ -24,16 +24,23 @@ img {
     clear: both;
 }
 
-/* Tablet */ 
-@media only screen and (min-device-width: 768px){
-    body {
-        font-size: 15px;
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .column {
+        width: 100%;
     }
-    }
+}
 
-/* Desktop */
-@media only screen and (min-width: 1200px) {
-    body {
-        font-size: 15px;
+/* Tablet */ 
+@media (min-width: 768px) and (max-width: 1024px){
+    .column {
+        width: 100%;
+    }
+}
+
+/* Desktop and Laptop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .column {
+        width: 100%;
     }
     }
