@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            height: 65vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        img {
+            width: 20rem;
+            height: 30rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            width: 50%;
+            height: 50%;
+        }
+
+        table, th, td {
+            border-collapse: collapse;
+            justify-content: center; 
+            align-items: center;
+            text-align: center;
+        }
+
+        #table2 {
+            width: 95%;
+            height: 95%;
+            padding: ;
+        }
+
+        #Quantity {
+            width: 25px;
+        }
+
+        #Email {
+            width: 100%;
+        }
+
+        #FirstName {
+            width: 97%;
+        } 
+
+        #LastName {
+            width: 98%;
+        }
+
+        #StreetAddress {
+            width: 100%;
+        }
+
+        #Phone {
+            width: 100%;
+        }
+
+        #date {
+            width: 70%;
+        }
+
+        #textarea {
+            width: 100%;
+            height: 5rem;
+        }
+
+         { 
+            width: 99%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form action="">
+        <table>
+        <tr>
+            <td rowspan="5"> 
+                <img src="businessWoman/white dress.webp"
+                /> 
+            </td>
+            <td colspan="1">
+                <h1>Company Dress</h1>
+            </td>
+
+        </tr>
+
+        
+        <tr>
+            <td colspan="1"> 
+                Color: 
+                <select 
+                size="1" 
+                name="Select Color" 
+                id="Color"
+                tabindex="1"
+                >
+                    <option value="">Black</option>
+                    <option value="">Blue</option>
+                    <option value="">Red</option>
+                    <option value="">White</option>
+                </select>
+                Quantity: 
+                <input
+                type="text" 
+                name="Quantity"
+                id="Quantity"
+                class="input"
+                autofocus
+                maxlength="2"
+                required
+                tabindex="2"
+                />
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="1">
+                Size: 
+                <input type="radio" name="size" id="small" value="small" tabindex="3"> 
+                Small
+                <input type="radio" name="size" id="medium" value="medium" tabindex="4">
+                medium
+                <input type="radio" name="size" id="large" value="large" tabindex="5">
+                Large
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="1">
+                <input type="checkbox" 
+                name="GO" 
+                id="GO" 
+                value="yes" 
+                tabindex="6">
+                Include Logo
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="1">
+                <label for="myfile"></label>
+                <input 
+                type="file" 
+                id="myfile"
+                name="myfile"
+                tabindex="7">
+            </td>
+        </tr>
+        </table>
+    </form>
+
+        <hr>
+
+    <form>
+        <table id="table2">
+            <tr>
+                <td colspan="2">
+                    <input 
+                    type="text" 
+                    name="FirstName"
+                    id="FirstName"
+                    class="input"
+                    autofocus
+                    maxlength="24"
+                    required
+                    tabindex="7"
+                    placeholder="First Name"
+                />
+                </td>
+
+                <td colspan="2">
+                    <input 
+                    type="text" 
+                    name="LastName"
+                    id="LastName"
+                    class="input"
+                    autofocus
+                    maxlength="24"
+                    required
+                    tabindex="8"
+                    placeholder="Last Name"
+                />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <input 
+                    type="text" 
+                    name="StreetAddress"
+                    id="StreetAddress"
+                    class="input"
+                    autofocus
+                    maxlength="32"
+                    required
+                    tabindex="9"
+                    placeholder="Street Address"
+                />
+                </td>
+            </tr>
+                
+            <tr>
+                <td colspan="2">
+                    <input 
+                    type="text" 
+                    name="City"
+                    id="City"
+                    class="input"
+                    autofocus
+                    maxlength="20"
+                    required
+                    tabindex="10"
+                    placeholder="City"
+                />
+                </td>
+
+                <td colspan="1">
+                    <input 
+                    type="text" 
+                    name="State"
+                    id="State"
+                    class="input"
+                    autofocus
+                    maxlength="12"
+                    required
+                    tabindex="11"
+                    placeholder="State"
+                />
+                </td>
+
+                <td colspan="1">
+                    <input 
+                    type="text" 
+                    name="Zip"
+                    id="Zip"
+                    class="input"
+                    autofocus
+                    maxlength="6"
+                    required
+                    tabindex="12"
+                    placeholder="Zip"
+                />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <input 
+                    type="text" 
+                    name="Email"
+                    id="Email"
+                    class="input"
+                    autofocus
+                    maxlength="32"
+                    required
+                    tabindex="13"
+                    placeholder="Email"
+                />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <input 
+                    type="text" 
+                    name="Phone"
+                    id="Phone"
+                    class="input"
+                    autofocus
+                    maxlength="12"
+                    required
+                    tabindex="14"
+                    placeholder="Phone Number"
+                />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    Best delivery date:
+                </td>
+                <td colspan="2">
+                    <label for="delivery"></label>
+                    <input 
+                    type="date" 
+                    id="date" 
+                    name="delivery" 
+                    min="2024-05-08" 
+                    max="2025-12-31"
+                    tabindex="15"
+                    placeholder="mm/dd/yyyy"
+                    />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <input 
+                    type="textarea" 
+                    id="textarea" 
+                    name="special instructions" 
+                    autofocus
+                    maxlength="100"
+                    tabindex="16"
+                    placeholder="Special instructions here"
+                    />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <input
+                    type="submit"
+                    tabindex="17"
+                    
+                    />
+                </td>    
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
