@@ -13,15 +13,15 @@
         }
 
         form {
-            height: 65vh;
+            height: 80vh;
             align-items: center;
             justify-content: center;
             display: flex;
         }
 
         img {
-            width: 20rem;
-            height: 30rem;
+            width: 200px;
+            height: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,67 +33,39 @@
         }
 
         table, th, td {
+            border: 1px solid;
             border-collapse: collapse;
-            justify-content: center; 
-            align-items: center;
+        }
+
+        input[type=text] {
+            width: 100%;
+            height: 100%;
+        }
+
+        input[type=submit] {
+            width: 97%;
+        }
+
+        #table1 {
+            align-items: right;
+            align-content: right;
             text-align: center;
         }
 
-        #table2 {
-            width: 95%;
-            height: 95%;
-            padding: ;
-        }
 
-        #Quantity {
-            width: 25px;
-        }
-
-        #Email {
-            width: 100%;
-        }
-
-        #FirstName {
-            width: 97%;
-        } 
-
-        #LastName {
-            width: 98%;
-        }
-
-        #StreetAddress {
-            width: 100%;
-        }
-
-        #Phone {
-            width: 100%;
-        }
-
-        #date {
-            width: 70%;
-        }
-
-        #textarea {
-            width: 100%;
-            height: 5rem;
-        }
-
-         { 
-            width: 99%;
-        }
 
     </style>
 
 </head>
 <body>
     <form action="">
-        <table>
+        <table id="table1">
         <tr>
             <td rowspan="5"> 
                 <img src="businessWoman/white dress.webp"
                 /> 
             </td>
-            <td colspan="1">
+            <td colspan="3" align="center">
                 <h1>Company Dress</h1>
             </td>
 
@@ -101,7 +73,7 @@
 
         
         <tr>
-            <td colspan="1"> 
+            <td colspan="2"> 
                 Color: 
                 <select 
                 size="1" 
@@ -114,9 +86,11 @@
                     <option value="">Red</option>
                     <option value="">White</option>
                 </select>
+                </td>
+                <td colspan="1">
                 Quantity: 
                 <input
-                type="text" 
+                type="" 
                 name="Quantity"
                 id="Quantity"
                 class="input"
@@ -129,13 +103,13 @@
         </tr>
 
         <tr>
-            <td colspan="1">
-                Size: 
-                <input type="radio" name="size" id="small" value="small" tabindex="3"> 
-                Small
-                <input type="radio" name="size" id="medium" value="medium" tabindex="4">
-                medium
-                <input type="radio" name="size" id="large" value="large" tabindex="5">
+            <td colspan="3" >
+                Size:      
+                <input type="radio" name="size" id="radio" value="small" tabindex="3"> 
+                Small                
+                <input type="radio" name="size" id="radio" value="medium" tabindex="4">
+                Medium               
+                <input type="radio" name="size" id="radio" value="large" tabindex="5">
                 Large
             </td>
         </tr>
@@ -152,7 +126,7 @@
         </tr>
 
         <tr>
-            <td colspan="1">
+            <td colspan="">
                 <label for="myfile"></label>
                 <input 
                 type="file" 
@@ -163,10 +137,9 @@
         </tr>
         </table>
     </form>
+            <hr>
 
-        <hr>
-
-    <form>
+    <form action="">
         <table id="table2">
             <tr>
                 <td colspan="2">
@@ -294,10 +267,11 @@
                 <td colspan="2">
                     Best delivery date:
                 </td>
+                <td colspan="1"></td>
                 <td colspan="2">
                     <label for="delivery"></label>
                     <input 
-                    type="date" 
+                    type="text" 
                     id="date" 
                     name="delivery" 
                     min="2024-05-08" 
@@ -311,7 +285,7 @@
             <tr>
                 <td colspan="4">
                     <input 
-                    type="textarea" 
+                    type="text" 
                     id="textarea" 
                     name="special instructions" 
                     autofocus
@@ -323,7 +297,10 @@
             </tr>
 
             <tr>
-                <td colspan="4">
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1">
                     <input
                     type="submit"
                     tabindex="17"
