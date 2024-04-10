@@ -12,30 +12,25 @@
             box-sizing: border-box;
         }
 
-        form {
-            height: 80vh;
+        body {
+            height: 100vh;
             align-items: center;
             justify-content: center;
             display: flex;
         }
 
         img {
-            width: 200px;
+            width: 175px;
             height: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        table {
-            width: 50%;
-            height: 50%;
-        }
-
-        table, th, td {
+    /* table, th, td {
             border: 1px solid;
             border-collapse: collapse;
-        }
+        }*/
 
         input[type=text] {
             width: 100%;
@@ -43,16 +38,22 @@
         }
 
         input[type=submit] {
-            width: 97%;
+            width: 100px;
         }
 
-        #table1 {
-            align-items: right;
-            align-content: right;
+        hr {
+            width: 530px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #table2 {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            padding: 1px;
         }
-
-
 
     </style>
 
@@ -65,7 +66,7 @@
                 <img src="businessWoman/white dress.webp"
                 /> 
             </td>
-            <td colspan="3" align="center">
+            <td colspan="2" style="text-align: center; width: 325px;">
                 <h1>Company Dress</h1>
             </td>
 
@@ -73,23 +74,22 @@
 
         
         <tr>
-            <td colspan="2"> 
+            <td colspan="1" style="padding-left: 10px;"> 
                 Color: 
                 <select 
                 size="1" 
                 name="Select Color" 
                 id="Color"
                 tabindex="1"
+                style="width: 80px;"
                 >
                     <option value="">Black</option>
                     <option value="">Blue</option>
                     <option value="">Red</option>
                     <option value="">White</option>
                 </select>
-                </td>
-                <td colspan="1">
-                Quantity: 
-                <input
+                Quantity:                    
+                <input 
                 type="" 
                 name="Quantity"
                 id="Quantity"
@@ -103,7 +103,7 @@
         </tr>
 
         <tr>
-            <td colspan="3" >
+            <td colspan="2" style="text-align: center; width: 70px; padding-left: 10px;">
                 Size:      
                 <input type="radio" name="size" id="radio" value="small" tabindex="3"> 
                 Small                
@@ -115,7 +115,7 @@
         </tr>
 
         <tr>
-            <td colspan="1">
+            <td colspan="1" style="padding-left: 10px;">
                 <input type="checkbox" 
                 name="GO" 
                 id="GO" 
@@ -126,7 +126,7 @@
         </tr>
 
         <tr>
-            <td colspan="">
+            <td colspan="1" style="padding-left: 10px;">
                 <label for="myfile"></label>
                 <input 
                 type="file" 
@@ -136,10 +136,7 @@
             </td>
         </tr>
         </table>
-    </form>
             <hr>
-
-    <form action="">
         <table id="table2">
             <tr>
                 <td colspan="2">
@@ -153,6 +150,7 @@
                     required
                     tabindex="7"
                     placeholder="First Name"
+                    style="width: 240px;"
                 />
                 </td>
 
@@ -167,6 +165,8 @@
                     required
                     tabindex="8"
                     placeholder="Last Name"
+                    style="width: 288px;"
+
                 />
                 </td>
             </tr>
@@ -183,6 +183,7 @@
                     required
                     tabindex="9"
                     placeholder="Street Address"
+                    style="width: 530px;"
                 />
                 </td>
             </tr>
@@ -199,10 +200,11 @@
                     required
                     tabindex="10"
                     placeholder="City"
+                    style="width: 240px;"
                 />
                 </td>
 
-                <td colspan="1">
+                <td colspan="1" style="width: ;">
                     <input 
                     type="text" 
                     name="State"
@@ -227,6 +229,7 @@
                     required
                     tabindex="12"
                     placeholder="Zip"
+                    style="width: 138px;"
                 />
                 </td>
             </tr>
@@ -243,6 +246,7 @@
                     required
                     tabindex="13"
                     placeholder="Email"
+                    style="width: 530px;"
                 />
                 </td>
             </tr>
@@ -259,6 +263,7 @@
                     required
                     tabindex="14"
                     placeholder="Phone Number"
+                    style="width: 530px;"
                 />
                 </td>
             </tr>
@@ -278,6 +283,7 @@
                     max="2025-12-31"
                     tabindex="15"
                     placeholder="mm/dd/yyyy"
+                    style="width: 140px;"
                     />
                 </td>
             </tr>
@@ -292,6 +298,7 @@
                     maxlength="100"
                     tabindex="16"
                     placeholder="Special instructions here"
+                    style="width: 530px; height: 50px;"
                     />
                 </td>
             </tr>
