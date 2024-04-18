@@ -63,4 +63,12 @@
         </amigoInfo>
     </ticket>
 </body>
+<script>
+    let strName = prompt('What is your name?');
+    let strDate = prompt('When would you like your appointment?'); 
+
+    document.title = strName + ' \'s Ticket to Animal Amigos';
+    document.getElementById('ownerName').innerText = strName
+    document.getElementById('visitDate').innerText = strDate
+</script>
 </html>
