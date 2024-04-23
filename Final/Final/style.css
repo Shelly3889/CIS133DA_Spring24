@@ -261,7 +261,6 @@ body {
     margin: 25px;
 }
 
-/*  pilot*/
 .card-text p {
     color: rgb(89, 185, 91);
     font-family: "Poppins", sans-serif;
@@ -278,16 +277,21 @@ body {
 
 /* lenght of card*/
 .card {
-    margin-left: 350px;
-    margin-top:50px;
+    margin-left: 50px;
+    margin-top:5px;
     right: -30%;
-    width: 60%;
+    width: 70%;
     height: flex;
 }
 
-.table {
+table {
     margin-left: 350px;
-    margin-top:100px;
-    right: -30%;
+    margin-top:50px;
+    display: flex;
+}
+
+tr {
+    padding: 1rem;
+    display: flex;
 }
 
