@@ -107,10 +107,50 @@
                 <th class="sum" id="actTot"></th>
             </tr>
             <tr>
-                <th id="myGrade" colspan="3"></th>
+                <th id="myGrade" colspan="3"><button onclick="calc()">Recalculate</button></th>
             </tr>
         </tfoot>
     </table>
 
 </body>
+<script>
+    function calc() {
+        var posTot = 0, actTot = 0, pctTot, strGrade;
+        var aryElms = document.getElementsByTagName('input');
+
+        for (var i=0; i < aryElms.length; i++) {
+            if (aryElms[i].id.indexOf('pos') == 0) {
+                posTot += parseInt(aryElms[i].value);
+                }
+            if (aryElms[i].id.indexOf('act') == 0) {
+                actTot += parseInt(aryElms[i].value)
+                }  
+        
+            }
+        document.getElementById('posTot').innerText = posTot;
+        document.getElementById('actTot').innerText = actTot;
+
+        pctTot = parseInt((actTot / posTot) * 100);
+
+        switch(true) {
+            case (pctTot > 89):
+                strGrade = 'A';
+                break;
+            case (pctTot > 79):
+                strGrade = 'B';
+                break;
+            case (pctTot > 69):
+                strGrade = 'C';
+                break;
+            case (pceTot > 59):
+                strGrade = 'D';
+                break;
+            default:
+                strGrade = 'F';
+                 break;
+            }
+        
+        document.getElementById('myGrade').innerText = `Letter Grade: ${strGrade} (${pctTot}%)`;
+        }
+</script>
 </html>

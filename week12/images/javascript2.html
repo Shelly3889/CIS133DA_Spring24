@@ -66,15 +66,36 @@
 
 <script lang="javascript">
 
-    var name = window.prompt('Enter your first name');
-    var date = window.prompt('Enter the date you want to visit');
+    // var name = window.prompt('Enter your first name');
+    // var date = window.prompt('Enter the date you want to visit');
     document.title = `${name}'s Ticket to Animal Amigos`;
     document.getElementById('ownerName').innerText = name;
     document.getElementById('visitDate').innerText = date;
 
     function cancelTicket() {
         window.close();
+    
     }
+
+    function printTicket() {
+        var amigoName = document.getElementById('amigo_name').value;
+        var e = document.getElementById("amigo_type");
+        var amigoType = e.options[e.selectedIndex].text;
+        console.log(amigoType);
+        console.log(amigoName);
+
+        var amigoSize;
+        var arySize = document.getElementsByName('amigo_size');
+        for (var i=0; i < arySize.length; i++) {
+            if (arySize[i].checked) {
+                    amigoSize = arySize[i].value;
+            }
+        }
+        console.log(amigoSize)
+
+     
+    }
+
 
 </script>
 
